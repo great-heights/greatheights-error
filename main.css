@@ -20,18 +20,6 @@
     url('fonts/BeausiteClassicWeb-Clear.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Beausite Classic';
-  src: url('fonts/BeausiteClassic-Light.eot');
-  src: url('fonts/BeausiteClassic-Light.eot?#iefix')
-      format('embedded-opentype'),
-    url('fonts/BeausiteClassic-Light.woff2') format('woff2'),
-    url('fonts/BeausiteClassic-Light.woff') format('woff'),
-    url('fonts/BeausiteClassic-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
 
 html,
 body {
@@ -46,21 +34,20 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: 'Beausite Classic';
+  font-family: 'Beausite Clear';
   font-size: 100%;
   line-height: 1.5rem;
   color: #4d545d;
   font-smoothing: antialiased;
 }
 
-@media only screen and (min-width: 1200px) {
-		.ui.container {
-		width:1319px;
-	}
-}
 .error-header img {
 	text-align:center;
 	margin:auto;
+}
+.error-header .column {
+	text-align: center;
+    padding-top: 40px;
 }
 h2.ui.header {
 	font-family: Cambon, "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -80,6 +67,11 @@ h4.sans {
 	font-weight: 300;
     font-family: 'Beausite Clear';
 }
+.eight.wide {
+	max-width:600px;
+	text-align: center;
+	margin:auto;
+}
 #error-500 .ui.primary.button {
 	background-color: #08193c;
     color: #ffffff;
@@ -88,11 +80,13 @@ h4.sans {
 	font-size: 0.75rem;
 	font-weight:100;
 	text-transform: uppercase;
-	height: 56px;
+	height: 46px;
+	min-height:46px;
+	display:inline-block;
 	font-family: 'Beausite Clear';
     margin: 0em 0.25em 0em 0em;
     padding: 0.6875em 2rem 0.6875em;
 	border-radius: 0;
-	
-	
+	text-decoration:none;
+	line-height:4;
 }
